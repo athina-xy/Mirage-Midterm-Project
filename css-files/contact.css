@@ -1,0 +1,22 @@
+.contact-box {
+    background: rgba(0,0,0,0.6);
+    border-left: 6px solid #b78a28;
+    border-radius: 10px;
+}
+
+.map-box h4 {
+    color: #ffda7a;
+}
+
+.social-icon img {
+    transition: 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+}
+
+body.dark-theme .contact-box {
+    background: rgba(255,255,255,0.85);
+    color: #222;
+}

@@ -1,0 +1,30 @@
+.character-card {
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid #b78a28;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    color: #e8e8e8;
+    min-height: 350px;
+}
+
+.character-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #b78a28;
+}
+
+.character-img {
+    width: 70%;
+    border-radius: 50%;
+    border: 2px solid #b78a28;
+}
+
+/* Light mode version */
+body.dark-theme .character-card {
+    background: rgba(255,255,255,0.8);
+    color: #222;
+    border-color: #cfa44d;
+}
+
+body.dark-theme .character-card:hover {
+    box-shadow: 0 0 15px #cfa44d;
+}

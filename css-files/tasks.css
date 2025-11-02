@@ -1,0 +1,18 @@
+.task-form {
+    background: rgba(0,0,0,0.6);
+    border-left: 5px solid #b78a28;
+    border-radius: 8px;
+}
+
+.summaryBox {
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    color: #ffda7a;
+}
+
+/* Light Mode */
+body.dark-theme .task-form,
+body.dark-theme .summaryBox {
+    background: rgba(255,255,255,0.85);
+    color: #222;
+}

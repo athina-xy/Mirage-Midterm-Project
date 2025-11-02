@@ -1,0 +1,28 @@
+body {
+    font-family: 'Georgia', serif;
+    background: #121212;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/magic-forest.jpg') no-repeat center center/cover;
+    height: 90vh;
+}
+
+/* Dark theme toggle */
+.dark-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Light mode */
+body.dark-theme {
+    background: #f2f2f2;
+    color: #222;
+}
+
+body.dark-theme .hero {
+    filter: brightness(1.2);
+}
