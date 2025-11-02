@@ -1,0 +1,76 @@
+/* TEMP TEST — remove after verifying */
+body { 
+  background-color: #0e0e0e !important;   /* dark fallback color */
+}
+
+/* Your actual global styles (keep these) */
+body {
+  background: url("../images/bg-dark.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #e8e8e8;
+  font-family: "Poppins", sans-serif;
+}
+
+body.dark-theme {
+  background: #f4f4f4 !important;
+  color: #222 !important;
+}
+
+h1, h2, h3, h4 { color: #ffda7a; font-weight: 600; }
+
+.btn-warning { background-color: #b78a28; border: none; color: #fff; }
+.btn-warning:hover { background-color: #d9aa34; }
+/* ===== Magic Crystal Light/Dark Toggle ===== */
+
+.magic-switch {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.magic-switch input {
+    display: none;
+}
+
+.crystal {
+    width: 45px;
+    height: 22px;
+    background: linear-gradient(45deg, #b78a28, #ffda7a);
+    border-radius: 20px;
+    position: relative;
+    transition: 0.4s;
+    box-shadow: 0 0 10px #b78a28;
+}
+
+.crystal::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    transition: 0.4s;
+    box-shadow: 0 0 6px #fff;
+}
+
+/* When dark mode is active */
+input:checked + .crystal {
+    background: linear-gradient(45deg, #222, #555);
+    box-shadow: 0 0 8px #444;
+}
+
+input:checked + .crystal::after {
+    transform: translateX(22px);
+    background: #b78a28;
+}
+
+/* Text label */
+.mode-text {
+    color: #ffda7a;
+    font-size: 0.9rem;
+    margin-left: 8px;
+}

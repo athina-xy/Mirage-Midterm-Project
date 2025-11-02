@@ -1,0 +1,10 @@
+.nav-link.active {
+    color: #ffda7a !important;
+    text-shadow: 0 0 6px #ffda7a;
+    border-bottom: 2px solid #ffda7a;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffda7a !important;
+}

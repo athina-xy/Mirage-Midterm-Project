@@ -2,80 +2,164 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="The fractured tale of Mirage — Sylwen’s journey to restore what was lost.">
+    <meta name="description" content="The fractured tale of Mirage and the guild behind its task management system.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mirage | Storyline</title>
 
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <link rel="stylesheet" href="css-files/cssindex.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css-files/global.css?v=2">
+    <link rel="stylesheet" href="css-files/navbar.css">
     <link rel="stylesheet" href="css-files/storyline.css">
 </head>
+
+
 <body>
 
     <nav></nav>
+<div class="theme-toggle-container text-end pe-3 mt-2">
+    <label class="magic-switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="crystal"></span>
+        <span class="mode-text">Light</span>
+    </label>
+</div>
 
+
+    <!-- Storyline -->
     <section class="container storyline-wrapper py-5">
         <h1 class="text-center mb-4">The Fractured Realms</h1>
 
         <div class="story-container p-4">
             <p>
                 Long ago, Mirage was one. A world of starlit cities, crystal forests, and harmony between beings of magic and light. 
-                But the harmony was fragile — and when the Great Event struck, reality shattered.
+                But when the Great Event struck, reality shattered into floating realms, each obeying different laws of nature.
             </p>
 
             <p>
-                Fragments of existence split apart. Entire lands became floating shards of space, drifting in the void.
-                Truth and illusion blurred. Rivers flowed backwards in some realms, time froze in others. 
-            </p>
-
-            <h3>Sylwen’s Exile</h3>
-            <p>
-                Sylwen — a young elven mage — was exiled from her homeland, accused of unleashing the catastrophe. 
-                They claimed that in her reckless attempts to help her people, she tampered with ancient forces she couldn’t control.
-            </p>
-
-            <p>
-                But Sylwen remembers little. Her memories are fractured — flashes of magic, a blinding light, then silence.
-                The Council insists she caused the calamity. But whispers in the Realms say otherwise.
-            </p>
-
-            <h3>The Heart of Mirage</h3>
-            <p>
-                Legends tell of an ancient crystal — the Heart of Mirage — holding the power to restore balance. 
-                Sylwen sets out to find it, hoping to reclaim her honor and return home.
-            </p>
-
-            <p>
-                Yet as she travels through the fragmented worlds, encountering cultures, creatures, and truths that don’t align...
-                she begins to wonder:
+                Sylwen — once a promising mage — was exiled, accused of causing the disaster. Her memories are fractured, but her journey is clear:
+                travel through the shards, uncover the truth, and restore her honor.
             </p>
 
             <blockquote class="lead text-center my-4">
                 <em>What if Mirage was never meant to be whole?</em>
             </blockquote>
-
-            <p>
-                Perhaps each shard is a world of its own — complete, alive, and real. 
-                Perhaps truth is not singular. Perhaps balance is not what she was told.
-            </p>
-
-            <p class="ending">
-                And somewhere deep within the shards, the Heart waits — not to restore what once was, 
-                but to reveal what Mirage was always meant to be…
-            </p>
-        </div>
-
-        <div class="text-center mt-4">
-            <a href="characters.html" class="btn btn-warning">Meet the Characters</a>
         </div>
     </section>
 
+    <!-- ABOUT SECTION -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">About Mirage</h2>
+
+        <div class="story-container p-4">
+            <p>
+                Mirage is a task management system created by the Guild of Fractured Realms. With reality split into shards, 
+                guild members needed a powerful way to track missions, record discoveries, and maintain order.
+            </p>
+
+            <h4 class="mt-3">Features:</h4>
+            <ul>
+                <li>Add, edit, delete, and complete tasks</li>
+                <li>Sort and filter by status or date</li>
+                <li>Summary of tasks and activity</li>
+                <li>Analytics dashboard</li>
+                <li>Dark/Light mode</li>
+                <li>Local storage to keep tasks saved between visits</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- TEAM MEMBERS -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Meet the Guild</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="team-card text-center p-3">
+                    <img src="images/sylwen.png" class="team-img mb-3" alt="Sylwen">
+                    <h4>Sylwen</h4>
+                    <p class="text-warning">Guild Founder</p>
+                    <p>Expert in magic and fractured reality research.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="team-card text-center p-3">
+                    <img src="images/warden.png" class="team-img mb-3" alt="Crystal Warden">
+                    <h4>The Crystal Warden</h4>
+                    <p class="text-warning">Guardian</p>
+                    <p>Protects the Heart of Mirage and the integrity of the system.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="team-card text-center p-3">
+                    <img src="images/shadow.png" class="team-img mb-3" alt="Shadow">
+                    <h4>The Shadow</h4>
+                    <p class="text-warning">Information Keeper</p>
+                    <p>Collects secrets and knowledge across realms.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Carousel Images -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Scenes from the Realms</h2>
+
+        <div id="loreCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="images/magic-forest.png" class="d-block w-100 carousel-img" alt="Forest Realm">
+                    <div class="carousel-caption">
+                        <h5>Forest of Echoes</h5>
+                        <p>Where whispers of the past are carried by the wind.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/crystal-lake.png" class="d-block w-100 carousel-img" alt="Crystal Lake">
+                    <div class="carousel-caption">
+                        <h5>Crystal Lake</h5>
+                        <p>The Heart of Mirage may sleep beneath its surface.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/ruined-city.png" class="d-block w-100 carousel-img" alt="Ruined City">
+                    <div class="carousel-caption">
+                        <h5>City of Shards</h5>
+                        <p>A city frozen in fragmented time, half memory, half illusion.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#loreCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#loreCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="container text-center py-5">
+        <button class="btn btn-warning" onclick="location.href='tasks.html'">View Guild Tasks</button>
+    </section>
+
     <footer></footer>
-
     <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="js-files/navbar.js"></script>
     <script defer src="js-files/include.js"></script>
-
+    <script defer src="js-files/theme.js"></script> 
+    <script defer src="js-files/jsstoryline.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

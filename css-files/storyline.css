@@ -1,46 +1,57 @@
-.storyline-wrapper {
+/* ===== STORYLINE / ABOUT PAGE ONLY ===== */
+
+/* Story container (text box) */
+.story-container {
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    border-left: 6px solid #b78a28;
+    padding: 25px;
     color: #e8e8e8;
 }
 
-.story-container {
-    background: rgba(0, 0, 0, 0.55);
-    border-left: 6px solid #b78a28;
-    border-radius: 10px;
-    line-height: 1.7;
-    font-size: 1.2rem;
-}
-
-/* Soft parchment look in light mode */
+/* Light mode */
 body.dark-theme .story-container {
-    background: rgba(255, 255, 255, 0.75);
-    color: #2b2b2b;
+    background: rgba(255,255,255,0.85);
+    color: #222;
 }
 
-h1, h3 {
-    color: #fbd679;
-    text-shadow: 0 0 4px #000;
+/* Team member cards */
+.team-card {
+    background: rgba(0,0,0,0.6);
+    border: 1px solid #b78a28;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+    color: #e8e8e8;
+    text-align: center;
 }
 
-blockquote {
-    font-size: 1.4rem;
-    color: #ffda7a;
+.team-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 12px #b78a28;
 }
 
-/* Beautiful fade-in animation */
-.story-container p, h3, blockquote {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 0.8s ease forwards;
+.team-img {
+    width: 70%;
+    border-radius: 50%;
+    border: 2px solid #b78a28;
 }
 
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Light mode cards */
+body.dark-theme .team-card {
+    background: rgba(255,255,255,0.85);
+    color: #222;
 }
 
-.ending {
-    font-weight: bold;
-    color: #d4b46a;
+/* Carousel size */
+.carousel-img {
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Center and limit carousel width */
+#loreCarousel {
+    max-width: 800px;
+    margin: auto;
 }

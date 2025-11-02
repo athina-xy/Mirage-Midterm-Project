@@ -1,28 +1,84 @@
-body {
-    font-family: 'Georgia', serif;
-    background: #121212;
-    color: white;
+/* HOME PAGE ONLY BACKGROUND */
+body[data-page="home"] {
+    background: url("../images/mirage-bg.png?v=5") no-repeat center center fixed !important;
+    background-size: cover !important;
 }
 
-/* Hero Section */
+/* Light mode override (keep image even in light mode) */
+body.dark-theme[data-page="home"] {
+    background: url("../images/mirage-bg.png?v=5") no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+/* Hero Text */
 .hero {
-    background: url('../images/magic-forest.jpg') no-repeat center center/cover;
-    height: 90vh;
+    height: 85vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-/* Dark theme toggle */
-.dark-toggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+/* Subtle overlay for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+    pointer-events: none;
 }
 
-/* Light mode */
-body.dark-theme {
-    background: #f2f2f2;
-    color: #222;
+/* Ensure hero text is above overlay */
+.hero > div {
+    position: relative;
+    z-index: 1;
 }
 
-body.dark-theme .hero {
-    filter: brightness(1.2);
+/* ===== ENTER BUTTON ===== */
+#enterRealmBtn {
+    background-color: #777;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+}
+#enterRealmBtn:hover {
+    background-color: #999;
+}
+
+/* ===== REVEAL SECTION ===== */
+#revealContent {
+    animation: fadeIn 1.3s forwards;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* ===== CRYSTAL QUOTE BOX ===== */
+.crystal-box {
+    background: rgba(255,255,255,0.12);
+    border: 2px solid #b78a28;
+    border-radius: 10px;
+    min-height: 130px;
+    color: #ffda7a;
+    font-size: 1.05rem;
+    backdrop-filter: blur(2px);
+}
+
+/* ===== LATEST ACTIVITY BOX ===== */
+.activity-box {
+    background: rgba(255,255,255,0.12);
+    border: 2px solid #b78a28;
+    border-radius: 10px;
+    min-height: 130px;
+    backdrop-filter: blur(2px);
+}
+
+/* Light theme versions */
+body.dark-theme .crystal-box,
+body.dark-theme .activity-box {
+    background: rgba(0,0,0,0.15);
+    color: #333;
 }
