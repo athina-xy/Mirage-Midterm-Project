@@ -1,13 +1,17 @@
-/* HOME PAGE ONLY BACKGROUND */
 body[data-page="home"] {
-    background: url("../images/mirage-bg.png?v=5") no-repeat center center fixed !important;
+    background: url("../images/mirage-bg.png") no-repeat center center fixed !important;
     background-size: cover !important;
 }
 
-/* Light mode override (keep image even in light mode) */
-body.dark-theme[data-page="home"] {
-    background: url("../images/mirage-bg.png?v=5") no-repeat center center fixed !important;
-    background-size: cover !important;
+
+
+/* Homepage background */
+body[data-page="home"] {
+    background-image: url("../images/mirage-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Hero Text */
@@ -53,7 +57,7 @@ body.dark-theme[data-page="home"] {
 }
 @keyframes fadeIn {
     from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+    to   {opacity: 1; transform: translateY(0);}
 }
 
 /* ===== CRYSTAL QUOTE BOX ===== */
@@ -76,9 +80,9 @@ body.dark-theme[data-page="home"] {
     backdrop-filter: blur(2px);
 }
 
-/* Light theme versions */
+/* (Optional) If you want special tweaks in dark theme for these boxes, fix here: */
 body.dark-theme .crystal-box,
 body.dark-theme .activity-box {
-    background: rgba(0,0,0,0.15);
-    color: #333;
+    background: rgba(0,0,0,0.35);
+    color: #ffda7a;
 }
