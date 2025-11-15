@@ -100,3 +100,29 @@ body:not(.dark-theme) .character-card {
     border: 1px solid #d4b46a;
     color: #222;
 }
+
+/* Pre-Order button  */
+body:not(.dark-theme) .contact-box .btn-outline-light {
+    border-color: #b78a28;
+    color: #b78a28;
+    background-color: transparent;
+}
+
+body:not(.dark-theme) .contact-box .btn-outline-light:hover {
+    background-color: #b78a28;
+    color: #ffffff;
+}
+
+
+/* hero text so it's readable */
+body:not(.dark-theme) .hero p {
+    color: #f5f5f5;
+    text-shadow: 0 0 6px #000000;
+}
+
+/* carousel captions in light theme */
+body:not(.dark-theme) .carousel-caption h5,
+body:not(.dark-theme) .carousel-caption p {
+    color: #f8f8f8;
+    text-shadow: 0 0 6px #000000;
+}
