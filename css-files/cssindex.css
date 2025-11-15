@@ -1,20 +1,10 @@
+/* homepage bg */
 body[data-page="home"] {
-    background: url("../images/mirage-bg.png") no-repeat center center fixed !important;
-    background-size: cover !important;
-}
-
-
-
-/* Homepage background */
-body[data-page="home"] {
-    background-image: url("../images/mirage-bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: #000 url("../images/mirage-bg.png") no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
-/* Hero Text */
+/* hero txt */
 .hero {
     height: 85vh;
     text-align: center;
@@ -39,7 +29,7 @@ body[data-page="home"] {
     z-index: 1;
 }
 
-/* ===== ENTER BUTTON ===== */
+/* enter button */
 #enterRealmBtn {
     background-color: #777;
     border: none;
@@ -50,7 +40,7 @@ body[data-page="home"] {
     background-color: #999;
 }
 
-/* ===== REVEAL SECTION ===== */
+/* reveal animation */
 #revealContent {
     animation: fadeIn 1.3s forwards;
     opacity: 0;
@@ -60,29 +50,39 @@ body[data-page="home"] {
     to   {opacity: 1; transform: translateY(0);}
 }
 
-/* Quote Box  */
+/* quotes */
 .crystal-box {
-    background: rgba(255,255,255,0.12);
-    border: 2px solid #b78a28;
-    border-radius: 10px;
-    min-height: 130px;
-    color: #ffda7a;
-    font-size: 1.05rem;
-    backdrop-filter: blur(2px);
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 1.25rem 1.75rem;
+    border-radius: 12px;
+    text-align: center;
+    
 }
 
-/*  Latest Activity Box */
+/* Special button style for the Archives */
+.btn-archive {
+    background-color: #d9aa34;
+    color: #000;
+    border: 1px solid #b78a28;
+    font-size: 0.9rem;
+    padding: 6px 18px;
+    border-radius: 6px;
+}
+.btn-archive:hover {
+    background-color: #ffda7a;
+    color: #000;
+}
+
+/* ===== LATEST EVENTS + ANALYTICS BOX ===== */
 .activity-box {
-    background: rgba(255,255,255,0.12);
-    border: 2px solid #b78a28;
     border-radius: 10px;
     min-height: 130px;
-    backdrop-filter: blur(2px);
+    /* background & border are controlled by theme CSS */
 }
 
-/* Quote and Latest activity boxes dark/light theme */
-body.dark-theme .crystal-box,
-body.dark-theme .activity-box {
-    background: rgba(0,0,0,0.35);
-    color: #ffda7a;
+/* Make the chart smaller and centered */
+.tasks-chart-wrap {
+    max-width: 240px;
+    margin: 0 auto;
 }
