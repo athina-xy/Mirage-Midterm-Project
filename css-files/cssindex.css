@@ -60,7 +60,7 @@ body[data-page="home"] {
     to   {opacity: 1; transform: translateY(0);}
 }
 
-/* ===== CRYSTAL QUOTE BOX ===== */
+/* Quote Box  */
 .crystal-box {
     background: rgba(255,255,255,0.12);
     border: 2px solid #b78a28;
@@ -71,7 +71,7 @@ body[data-page="home"] {
     backdrop-filter: blur(2px);
 }
 
-/* ===== LATEST ACTIVITY BOX ===== */
+/*  Latest Activity Box */
 .activity-box {
     background: rgba(255,255,255,0.12);
     border: 2px solid #b78a28;
@@ -80,7 +80,7 @@ body[data-page="home"] {
     backdrop-filter: blur(2px);
 }
 
-/* (Optional) If you want special tweaks in dark theme for these boxes, fix here: */
+/* Quote and Latest activity boxes dark/light theme */
 body.dark-theme .crystal-box,
 body.dark-theme .activity-box {
     background: rgba(0,0,0,0.35);
